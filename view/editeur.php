@@ -15,7 +15,7 @@
             
         <nav  class="p-2 m-2 border border-primary rounded ">
             <div class="row justify-content-between">
-                <form action="../index.php" method="post" class="col-md-2" >
+                <form class="col-md-2" >
                     <button  type="button" data-bs-toggle="modal"data-bs-target="#add" class="btn btn-outline-primary" name="add">
                         Nouvelle categorie
                     </button>
