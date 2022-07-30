@@ -18,6 +18,10 @@ if(@isset($_REQUEST['adduser'])){
    $user->email = $_POST['email'];
    $userController->onAddUer($user);
 }
+#modifier les informations d'un utilisateur
+if(@isset($_REQUEST['action'])&&$_GET['editUser']){
+
+}
 #ajouter categori
 if(@isset($_POST['addCateg'])){
    $nom = $_POST['categName'];

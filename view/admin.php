@@ -229,8 +229,8 @@ $(document).ready(function(){
                             <td><?=$user->date_creation ?></td>
                             <td><span class="status text-<?=$user->status==0?'danger':'success' ?>">&bull;</span> Active</td>
                             <td>
-                                <a href="#" class="settings" title="Settings" data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i></a>
-                                <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>
+                                <a href="../index.php?action=editUser" class="settings" title="Modifier" data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i></a>
+                                <a href="../index.php?action=deleteUser" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -281,7 +281,7 @@ $(document).ready(function(){
             </select>
         </div>
         <div class="mb-3 justify-content-between">
-            <button type="submit" class="btn btn-primary justify-self-reverse" name="adduser">Ajouter</button>
+            <button type="submit" class="btn btn-primary justify-content-reverse" name="adduser">Ajouter</button>
             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
         </div>
         </form>

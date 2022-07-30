@@ -165,3 +165,58 @@
 
     </div>
 <?php }?>
+
+<?php function updateUser($user) { ?>
+    <div class="modal" id="addUser">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+            <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Ajout utilisateur</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="../index.php" method="post">
+                        <div class="mb-3 mt-3">
+                            <label for="nom" class="form-label">Nom:</label>
+                            <input type="text" class="form-control" id="nom" placeholder="Enter your name nom" name="nom">
+                        </div>
+                        <div class="mb-3">
+                            <label for="prenom" class="form-label">Prenom:</label>
+                            <input type="text" class="form-control" id="prenom" placeholder="Enter your second name" name="prenom">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="login" class="form-label">Login:</label>
+                            <input type="text" class="form-control" id="login" placeholder="Enter login" name="login">
+                        </div>
+                        <div class="mb-3">
+                            <label for="passwd" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="passwd" placeholder="Enter password" name="passwd">
+                        </div>
+                        <div class="mb-3">
+                            <label class="visually-hidden" for="role">Role</label>
+                            <select class="form-select" name="role" id="role">
+                                <option value="admin" selected >Admin</option>
+                                <option value="editeur" >Editeur</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 justify-content-between">
+                            <button type="submit" class="btn btn-primary justify-content-reverse" name="adduser">Ajouter</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>   
+<?php }?>
