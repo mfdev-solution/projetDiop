@@ -17,8 +17,8 @@ class Admin extends Editeur{
     //create a new user
     public function createUser($user){
         $user->passwd = password_hash($user->passwd ,PASSWORD_DEFAULT);
-        $req = "insert into user (nom,prenom,login,passwd,role ) value(?,?,?,?,?)";
-        return $this->bd->prepare($req)->execute([$user->nom,$user->prenom,$user->login,$user->passwd,$user->role]);
+        $req = "insert into user (nom,prenom,login,passwd,role ,email) value(?,?,?,?,?,?)";
+        return $this->bd->prepare($req)->execute([$user->nom,$user->prenom,$user->login,$user->passwd,$user->role,$user->email]);
 
     }
     //list users

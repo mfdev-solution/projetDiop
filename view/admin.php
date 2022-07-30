@@ -277,11 +277,11 @@ $(document).ready(function(){
             <label class="visually-hidden" for="role">Role</label>
             <select class="form-select" name="role" id="role">
                 <option value="admin" selected >Admin</option>
-                <option value="editeur">Editeur</option>
+                <option value="editeur" >Editeur</option>
             </select>
         </div>
         <div class="mb-3 justify-content-between">
-            <button type="submit" class="btn btn-primary justify-content-center">Submit</button>
+            <button type="submit" class="btn btn-primary justify-self-reverse" name="adduser">Ajouter</button>
             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
         </div>
         </form>

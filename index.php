@@ -7,6 +7,17 @@ include('view/head.php');
 $controler = new Controller();
 $userController = new UserController();
 $controler->navController();
+#Ajouter un ustilisateur
+if(@isset($_REQUEST['adduser'])){
+   $user = new stdClass();
+   $user->nom = $_POST['nom'];
+   $user->prenom = $_POST['prenom'];
+   $user->login = $_POST['login'];
+   $user->passwd = $_POST['passwd'];
+   $user->role = $_POST['role'];
+   $user->email = $_POST['email'];
+   $userController->onAddUer($user);
+}
 #ajouter categori
 if(@isset($_POST['addCateg'])){
    $nom = $_POST['categName'];
