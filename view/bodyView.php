@@ -9,12 +9,17 @@
                     </button>
                 </form>
                 <form action="./view/editeur.php" method="post">
-                    <?php if( @$_SESSION['user']->role=='admin'){?>
+                    <button type="submit" name="admin"  class="btn btn-outline-primary d-flex flex-row-reverse ">
+                        Gestion Categorie
+                    </button>
+                </form>
+                <?php if( @$_SESSION['user']->role=='admin'){?>
+                    <form action="./view/admin.php" method="post">
                         <button type="submit" name="admin"  class="btn btn-outline-primary d-flex flex-row-reverse ">
                             Gestion utilisateurs
                         </button>
-                    <?php } ?>
-                </form>
+                    </form>
+                <?php } ?>
 
             </nav>
         <?php }?>

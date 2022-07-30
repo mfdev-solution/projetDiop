@@ -21,7 +21,7 @@
             </div>
          </div>
 
-         <nav id="navbar_top" class=" navbar  navbar-expand-lg navbar-dark bg-primary flex-grow" sty>
+         <nav id="navbar_top"style="margin-bottom: 0px" class=" navbar  navbar-expand-lg navbar-dark bg-primary flex-grow" >
             <div class="container ">
                <a class="navbar-brand justify-content-left" href="index.php">Actualite</a>
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
