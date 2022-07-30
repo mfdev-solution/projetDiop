@@ -49,10 +49,18 @@
                 <?php } ?>
                 <div class="row justify-content-between mb-15">
                     <div class="col-2">
-                        <a style="border-left: 0px;margin-left:0px;padding-left:0px;display:<?=$page<=0?'none':'block'?>" href="index.php?page=<?=$page-1?>">precedent</a>
+                        <a style="border-left: 0px;margin-left:0px;padding-left:0px;display:<?=$page<=0?'none':'block'?>;text-decoration: none"
+                         href="index.php?page=<?=$page-1?>">
+                         <!-- <i class='fas fa-arrow-alt-circle-left' style='font-size:48px;color:#0d6ef'></i> -->
+                         <i class='far fa-hand-point-left' style='font-size:40px;color:#0d6ef'></i>
+                        </a>
                     </div>
                     <div class="col-2 d-flex flex-row-reverse" >
-                        <a style="border-left: 0px;display:<?=$page>=$nbPages?'none':'block'?>"  href="index.php?page=<?=$page+1?>" >suivant</a>
+                        <a style="border-left: 0px;display:<?=$page>=$nbPages?'none':'block'?>;text-decoration: none;" 
+                        href="index.php?page=<?=$page+1?>" >
+                        <i class='far fa-hand-point-right' style='font-size:40px;color:#0d6ef'></i>
+                         <!-- <i class='fas fa-arrow-alt-circle-right' style='font-size:48px;color:#0d6ef'></i> -->
+                        </a>
                     </div>
                 </div>
         <?php } else { ?>

@@ -14,7 +14,6 @@ if(@isset($_POST['addCateg'])){
 }
 #formulaire pour modifier un article
 if(@isset($_GET['action'])&&$_GET['action']=='edit'){
-   
    $controler->editArticleController($_GET['id']);
    die();
 }
