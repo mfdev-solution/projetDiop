@@ -229,8 +229,8 @@ $(document).ready(function(){
                             <td><?=$user->date_creation ?></td>
                             <td><span class="status text-<?=$user->status==0?'danger':'success' ?>">&bull;</span> Active</td>
                             <td>
-                                <a href="../index.php?action=editUser" class="settings" title="Modifier" data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i></a>
-                                <a href="../index.php?action=deleteUser" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>
+                                <a href="../index.php?action=editUser&&id=<?=$user->id?>" class="settings" title="Modifier" data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i></a>
+                                <a href="../index.php?action=deleteUser&&id=<?=$user->id?>" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>
                             </td>
                         </tr>
                     <?php endforeach; ?>

@@ -19,7 +19,12 @@ if(@isset($_REQUEST['adduser'])){
    $userController->onAddUer($user);
 }
 #modifier les informations d'un utilisateur
-if(@isset($_REQUEST['action'])&&$_GET['editUser']){
+if(@isset($_REQUEST['action'])&&$_GET['action']=='editUser'){
+
+}
+#Supprimer un utilisateur
+if(@isset($_REQUEST['id'])&&$_GET['action']=='deleteUser'){
+   $userController->onDeleteUser($_REQUEST['id']);
 
 }
 #ajouter categori

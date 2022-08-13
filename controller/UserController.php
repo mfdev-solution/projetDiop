@@ -34,6 +34,13 @@ class UserController{
             echo "Error: add user failed";
         }
     }
+    public function onDeleteUser($suerId){
+        if($this->userAdmin->deleteUser($suerId)){
+            header("Location:./view/admin.php");
+        }else{
+            echo "Error: add user failed";
+        }
+    }
 
     
 }
